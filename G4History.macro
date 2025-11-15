@@ -1,6 +1,6 @@
 /run/verbose 2
 /run/initialize
-/control/execute vis.mac
+/control/execute macros/vis.mac
 /control/verbose 2
 /vis/open OGL 600x600-0+0
 /vis/sceneHandler/create OGL
@@ -25,8 +25,8 @@
 /vis/viewer/refresh
 /vis/verbose warnings
 /vis/scene/endOfEventAction accumulate
-/control/execute gui.mac
-/control/execute icons.mac
+/control/execute macros/gui.mac
+/control/execute macros/icons.mac
 /gui/defaultIcons false
 /gui/addIcon "Open macro file" open /control/execute
 /gui/addIcon "Save viewer state" save /vis/viewer/save
@@ -55,5 +55,17 @@
 /gui/addButton gun "pi+" "/gun/particle pi+"
 /gui/addButton gun "neutron" "/gun/particle neutron"
 /gui/addButton gun "proton" "/gun/particle proton"
+/PA/generator/useGenerated false
+/gui/addMenu viewer Viewer
+/gui/addButton viewer "Set style surface" "/vis/viewer/set/style surface"
+/gui/addButton viewer "Set style wireframe" "/vis/viewer/set/style wireframe"
+/gui/addButton viewer "Refresh viewer" "/vis/viewer/refresh"
+/gui/addButton viewer "Update viewer (interaction or end-of-file)" "/vis/viewer/update"
+/gui/addButton viewer "Flush viewer (= refresh + update)" "/vis/viewer/flush"
+/gui/addButton viewer "Update scene" "/vis/scene/notifyHandlers"
+/gui/addIcon "Run beam on" user_icon "/run/beamOn 1" macros/run.png
+/control/execute run1.mac
 /run/beamOn 1
 /vis/scene/notifyHandlers scene-0
+/analysis/h1/getVector
+/analysis/h2/getVector

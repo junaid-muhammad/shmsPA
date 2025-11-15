@@ -1,0 +1,7 @@
+/home/junaid/work/geant4/project/shmsPA/build/CMakeFiles/shmsPA.dir
+/home/junaid/work/geant4/project/shmsPA/build/CMakeFiles/edit_cache.dir
+/home/junaid/work/geant4/project/shmsPA/build/CMakeFiles/rebuild_cache.dir
+/home/junaid/work/geant4/project/shmsPA/build/CMakeFiles/list_install_components.dir
+/home/junaid/work/geant4/project/shmsPA/build/CMakeFiles/install.dir
+/home/junaid/work/geant4/project/shmsPA/build/CMakeFiles/install/local.dir
+/home/junaid/work/geant4/project/shmsPA/build/CMakeFiles/install/strip.dir

@@ -9,7 +9,12 @@
 /run/physicsModified
 
 ##specify particle type, central momentum, and output file name
-/PA/generator/momentum 5 GeV
-/gun/particle proton
-/analysis/setFileName proton5GeV1000.root
-/run/beamOn 1000
+#/PA/generator/momentum 5 GeV
+#/gun/particle proton
+#/analysis/setFileName proton5GeV1000.root
+#/run/beamOn 1000
+
+/PA/generator/momentum 5.127 GeV
+/gun/particle pi+
+/analysis/setFileName Q3p85_W2p02_t0p21_m5p127_150000.root
+/run/beamOn 150000
